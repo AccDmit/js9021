@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+        1    
+            let massage = "Верно"
+            let a = 0;
+
+            if (a >=-3) {
+            console.log(massage)
+            } else {
+            console.log('Не верно')
+            }
+
+
+       2  
+        // Если переменная  test  равна true, о выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при test, равном true, false. 
+        //Напишите два варианта скрипта - с короткой записью и с длинной.
+       
+         let test = false // true or false 
+
+         if (test == true) {
+            alert('Верно');
+            } else {
+            alert('Неверно');
+          }
+
+            let test = true 
+       
+            let alert = (test == true) ? "Верно" : "Неверно" ;
+            test += alert
+            console.log(alert)
+
+        3   
+            // Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10. 
+            // Выведите новое значение переменной на экран. Проверьте работу скрипта при  a, равном 5, 0, -3, 2
+            
+            let a = 2        
+            if (a == 0 || a == 2 ) {
+                a += 7
+            } else {
+              a /= 10;
+           }
+           console.log(a)
+
+
+        4 
+            // Если переменная a равна или меньше 1, а переменная b больше или равна 3, то выведите сумму этих переменных, иначе выведите их разность (результат вычитания). 
+            //Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.
+            
+            let a = 3
+            let b = 5
+
+            if( a <= 1 && b >= 3){
+                console.log(a + b)
+            } else{
+                console.log(a - b)
+            }
+        
+        5
+            //  В переменной month лежит какое-то число из интервала от 1 до 12. 
+            //Определите в какую пору года попадает этот месяц (зима, лето, весна, осень). Решите задачу через switch-case.
+
+            let month = +prompt('Type number 1 - 12', 6);
+                switch(month){
+                    case 1: console.log ('January');
+                        break;
+                    case 2: console.log ('February');
+                        break;
+                    case 3: console.log ('March');
+                        break;
+                    case 4: console.log ('April');
+                        break;
+                    case 5: console.log ('May');
+                        break;
+                    case 6: console.log ('Jun');
+                        break;
+                    case 7: console.log ('July');
+                        break;
+                    case 8: console.log ('August');
+                        break;
+                    case 9: console.log ('September');
+                        break;
+                    case 10: console.log ('October');
+                        break;
+                    case 11: console.log ('November');
+                        break;
+                    case 12: console.log ('December');
+                        break;
+                    default: console.log ('Not a month')
+                        break
+                        
+                }
+                    
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
